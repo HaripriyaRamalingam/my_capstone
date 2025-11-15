@@ -1,0 +1,74 @@
+[
+  {
+    "name": "basic_light_and_temp",
+    "conversation": [
+      {
+        "user": "Turn on the kitchen light",
+        "agent": {
+          "text": "Light turned on in kitchen.",
+          "meta": {
+            "status": "ok",
+            "action": "turn_on_light",
+            "room": "kitchen",
+            "message": "Light turned on in kitchen."
+          }
+        }
+      },
+      {
+        "user": "Set temperature to 24",
+        "agent": {
+          "text": "Temperature set to 24\u00b0C.",
+          "meta": {
+            "status": "ok",
+            "action": "set_temperature",
+            "temp": 24,
+            "message": "Temperature set to 24\u00b0C."
+          }
+        }
+      },
+      {
+        "user": "Remember my favorite drink is coffee",
+        "agent": {
+          "text": "Saved 'favorite drink' = 'coffee'."
+        }
+      },
+      {
+        "user": "What did I ask you to remember?",
+        "agent": {
+          "text": "{\n  \"favorite drink\": \"coffee\"\n}"
+        }
+      }
+    ]
+  },
+  {
+    "name": "schedule_query",
+    "conversation": [
+      {
+        "user": "What's my schedule on 2025-12-01?",
+        "agent": {
+          "text": "Events on 2025-12-01: 09:00 Meeting with team; 13:00 Lunch with mentor",
+          "meta": {
+            "status": "ok",
+            "date": "2025-12-01",
+            "events": [
+              "09:00 Meeting with team",
+              "13:00 Lunch with mentor"
+            ]
+          }
+        }
+      },
+      {
+        "user": "Turn on the bedroom light",
+        "agent": {
+          "text": "Light turned on in bedroom.",
+          "meta": {
+            "status": "ok",
+            "action": "turn_on_light",
+            "room": "bedroom",
+            "message": "Light turned on in bedroom."
+          }
+        }
+      }
+    ]
+  }
+]
