@@ -1,1 +1,19 @@
+[
+  {
+    "name": "basic_light_and_temp",
+    "scenario": [
+      {"user": "Turn on the kitchen light"},
+      {"user": "Set temperature to 24"},
+      {"user": "Remember my favorite drink is coffee"},
+      {"user": "What did I ask you to remember?"}
+    ]
+  },
+  {
+    "name": "schedule_query",
+    "scenario": [
+      {"user": "What's my schedule on 2025-12-01?"},
+      {"user": "Turn on the bedroom light"}
+    ]
+  }
+]
 
